@@ -1,0 +1,15 @@
+function editFunction() {
+    // Di sini Anda dapat menentukan tindakan yang ingin dilakukan saat tombol "Edit" ditekan
+    alert('Tombol Edit ditekan!'); // Contoh: Alert akan muncul saat tombol "Edit" ditekan
+    // Anda juga dapat menambahkan logika lain di sini, seperti navigasi halaman atau pengubahan data.
+}
+
+    function editFunction() {
+        // Lakukan sesuatu saat tombol "Edit" ditekan
+        window.location.href = 'edit_link'; // Ganti 'edit_link' dengan URL yang sesuai
+    }
+
+    function deleteFunction() {
+        // Lakukan sesuatu saat tombol "Hapus" ditekan
+        window.location.href = 'delete_link'; // Ganti 'delete_link' dengan URL yang sesuai
+    }

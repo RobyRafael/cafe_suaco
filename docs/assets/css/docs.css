@@ -1,0 +1,91 @@
+.max-height-300 pre {
+  max-height: 300px;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 24px;
+  position: relative;
+  width: 50px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 400ms;
+}
+
+.slider::before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 16px;
+  left: 4px;
+  position: absolute;
+  transition: 400ms;
+  width: 16px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider::before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round::before {
+  border-radius: 50%;
+}
+
+.action_btn{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.action_btn>a{
+  text-decoration: none;
+  color: #444;
+  background: whitesmoke;
+  border: 1px solid rgb(218, 126, 28);
+  display: inline-block;
+  padding: 5px 15px;
+  font-weight: bold;
+  border-radius: 3px;
+  transition: 1s ease-in-out;
+}
+
+/* Contoh gaya untuk tombol Edit */
+.edit_btn {
+  background-color: #007bff; /* Warna latar tombol Edit */
+  color: #fff; /* Warna teks tombol Edit */
+  border: none; /* Hapus border */
+  padding: 8px 16px; /* Padding tombol */
+  border-radius: 4px; /* Tambahkan sudut bulat */
+  cursor: pointer; /* Ubah kursor saat diarahkan ke tombol */
+  margin-right: 8px; /* Jarak antara tombol */
+}
+
+/* Contoh gaya untuk tombol Hapus */
+.delete_btn {
+  background-color: #dc3545; /* Warna latar tombol Hapus */
+  color: #fff; /* Warna teks tombol Hapus */
+  border: none; /* Hapus border */
+  padding: 8px 16px; /* Padding tombol */
+  border-radius: 4px; /* Tambahkan sudut bulat */
+  cursor: pointer; /* Ubah kursor saat diarahkan ke tombol */
+}
